@@ -19,7 +19,7 @@
 
 project = 'Dispenser Projects'
 copyright = '2023, Gunivers'
-author = 'theogiraudet'
+author = 'theogiraudet & theaustudio'
 
 # The full version, including alpha/beta/rc tags
 
