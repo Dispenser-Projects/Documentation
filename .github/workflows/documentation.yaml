@@ -1,7 +1,7 @@
 name: Docs
 on: [push, pull_request, workflow_dispatch]
-jobs:
-  docs:
+jobs:        
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -12,11 +12,26 @@ jobs:
       - name: Sphinx build
         run: |
           make html
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      - name: Publish artifact
+        uses: actions/upload-pages-artifact@v1.0.7
         with:
-          publish_branch: gh-pages
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _build/
-          force_orphan: true
+          path: _build/
+
+  deploy:
+    needs: build
+
+    # We need a GitHub Token with write access on Pages
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      # Note: This Actions publishes the artifact created in 'build' step to Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
