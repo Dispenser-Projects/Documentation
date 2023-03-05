@@ -1,4 +1,8 @@
-# 👀 Observer
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# 🤝 Contributing
 
 ```{admonition} 🏗️ Under construction
 :class: note

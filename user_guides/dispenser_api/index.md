@@ -1,9 +1,8 @@
 ---
 html_theme.sidebar_secondary.remove: true
-html_theme.sidebar_primary.remove: true
 ---
 
-# 📜 Changelog
+# 🔌 Dispenser API
 
 ```{admonition} 🏗️ Under construction
 :class: note

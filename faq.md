@@ -1,4 +1,9 @@
-# ❓ F.A.Q.
+---
+html_theme.sidebar_secondary.remove: true
+html_theme.sidebar_primary.remove: true
+---
+
+# ❓ FAQ
 
 ```{admonition} 🏗️ Under construction
 :class: note
