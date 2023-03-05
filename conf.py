@@ -1,7 +1,7 @@
 
 project = 'Dispenser Projects'
 copyright = '2023, Gunivers'
-author = 'theogiraudet'
+author = 'theogiraudet & theaustudio'
 
 import os
 import pydata_sphinx_theme
