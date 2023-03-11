@@ -30,13 +30,18 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'pydata_sphinx_theme'
 
 html_theme_options = {
-    "github_url": "https://github.com/Dispenser/",
+    "github_url": "https://github.com/Dispenser-Projects/",
     "announcement": "⚠️ You are reading a doc of an undergoing development version. Information can be out of date and/or change at any time. ⚠️",
     "logo": {
         "image_dark": "_static/logo.png",
         "text": "Dispenser",  # Uncomment to try text with logo
     },
     "icon_links": [
+        {
+            "name": "Support us",
+            "url": "https://utip.io/gunivers",
+            "icon": "fa fa-heart",
+        },
         {
             "name": "Gunivers",
             "url": "https://gunivers.net",
