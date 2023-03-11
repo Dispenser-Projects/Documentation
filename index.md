@@ -6,6 +6,16 @@ sd_hide_title: true
 
 # Home page
 
+<div align=center>
+<div style="max-width:700px">
+
+```{image} _static/banner.png
+:class: dark-light p-2
+```
+
+</div>
+</div>
+
 ## 🔎 What is it?
 
 Dispenser API is an API to provide Minecraft resources through a REST API. Is considered as "resources" all files that isn't a compiled Java class, so assets (client-side) and data (server-side).

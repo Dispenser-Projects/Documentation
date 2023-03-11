@@ -1,0 +1,19 @@
+html[data-theme="light"] {
+    --pst-color-primary: #3062eb;
+    --pst-color-secondary: #3296fa;
+    --sd-color-card-border-hover: var(--pst-color-primary);
+    --pst-color-primary-highlight: var(--pst-color-secondary);
+}
+
+html[data-theme="dark"] {
+    --pst-color-primary: #3062eb;
+    --pst-color-secondary: #3296fa;
+    --sd-color-card-border-hover: var(--pst-color-primary);
+    --pst-color-primary-highlight: var(--pst-color-secondary);
+    --pst-color-background: #1b2228;
+    --pst-color-on-background: #141a1e;
+}
+
+a.headerlink {
+    color: var(--pst-color-secondary);
+}

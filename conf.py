@@ -56,6 +56,10 @@ html_logo = "_static/logo.png"
 
 html_static_path = ['_static']
 
+html_css_files = [
+    'css/stylesheet.css',
+]
+
 myst_enable_extensions = [
     "amsmath",
     "colon_fence",
