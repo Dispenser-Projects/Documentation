@@ -8,7 +8,7 @@ import pydata_sphinx_theme
 
 # Project information ---------------------------------------------------------
 
-project = 'Bookshelf'
+project = 'Dispenser'
 copyright = '2023, Gunivers'
 author = 'Gunivers'
 html_favicon = "_static/logo.png"
